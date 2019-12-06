@@ -145,10 +145,10 @@ function githubCard(person){
   //content
   image.src = person.avatar_url;
   name.textContent = person.name;
-  username.textContent = person.login;
-  location.textContent = person.location;
-  profile.textContent = 'Profile:';
-  url.textContent = person.url;
+  username.textContent = `Username: ${person.login}`;
+  location.textContent = `Location: ${person.location}`;
+  profile.textContent = `Profile: ${person.url}`;
+  // url.href = person.url;
   followers.textContent = person.followers;
   following.textContent = person.following;
   bio.textContent = person.bio;
